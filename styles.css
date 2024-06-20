@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     z-index: 1000;
-
+    box-sizing: border-box;
 }
 
 .logo {
@@ -62,10 +62,10 @@ body {
     align-items: center;
     outline: 25px solid;
     width: 500px;
-    height: 500px;
     background: seagreen;
     border-radius: 50%;
     border: 25px solid salmon;
+    aspect-ratio: 1/1;
 }
 
 .home-image img {
