@@ -13,7 +13,7 @@ body {
     width: 100%;
     align-items: center;
     padding: 20px;
-    background: #bf0fbc;
+    background: #bf0fbc; 
     display: flex;
     justify-content: space-between;
     z-index: 1000;
@@ -21,18 +21,18 @@ body {
 }
 
 .header .logo {
-    font-family: "French Script MT", cursive;
-    font-size: 36px;
-    font-weight: normal;
-    color: #fff;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: "French Script MT", cursive; /* Set the font to French Script MT */
+    font-size: 36px; /* Adjust font size */
+    font-weight: normal; /* Adjust font weight if needed */
+    color: #fff; /* Example text color */
+    text-transform: uppercase; /* Example text transformation */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 20px; 
 }
 
 .navbar a {
@@ -62,23 +62,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 500px; 
+    height: 500px; 
     background: seagreen;
-    border-radius: 50%;
+    border-radius: 50%; 
     border: 25px solid salmon;
-    overflow: hidden;
+    overflow: hidden; 
     box-sizing: border-box;
 }
 
 .home-image img {
     display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     object-fit: cover;
 }
+
+
+
+
 
 .home-content {
     max-width: 600px;
@@ -90,6 +94,12 @@ body {
     font-size: 55px;
     line-height: 1.2;
     position: relative;
+}
+
+.home-content p::first-letter {
+    display: block;
+    position: relative;
+    margin-bottom: -0.4em;
 }
 
 .home-content h3 {
@@ -145,11 +155,35 @@ body {
     border: 1px solid #fff;
 }
 
-/* Skills Section */
 .my-skill-set {
     padding: 50px 10%;
     background: #fff;
     text-align: center;
+}
+
+.my-skill-set p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #031540;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.my-skill-set h6 {
+    font-size: 16px; /* Adjusted font size for better readability */
+    line-height: 1.4; /* Slightly reduced line height for compactness */
+    color: #031540;
+    margin: 15px 0; /* Slightly reduced top and bottom margins */
+    text-align: center;
+    font-weight: 500; /* Added font weight for emphasis */
+}
+
+
+
+@media (max-width: 768px) {
+    .my-skill-set p {
+        font-size: 16px;
+    }
 }
 
 .my-skill-set h2 {
@@ -171,13 +205,7 @@ body {
     bottom: 0;
 }
 
-.my-skill-set p,
-.my-skill-set h6 {
-    font-size: 18px;
-    color: #031540;
-    margin: 20px 0;
-    text-align: center;
-}
+
 
 .skills-container {
     display: flex;
@@ -193,6 +221,7 @@ body {
     padding: 20px;
     width: 200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
     color: #031540;
     display: flex;
@@ -207,92 +236,27 @@ body {
 .skill h3 {
     font-size: 18px;
     margin-top: 10px;
+    color: #031540;
 }
 
-/* Projects */
-.projects {
-    padding: 80px 5%;
-    background-color: #031540;
-    color: #fff;
+.skills-description {
+    font-size: 14px;
+    color: #555;
     text-align: center;
+    margin-top: 20px; /* Adjust top margin as needed */
+    font-style: normal; /* Ensure normal font style */
 }
 
-.projects h2 {
-    font-size: 42px;
-    margin-bottom: 30px;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 10px;
-}
 
-.projects h2::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 4px;
-    background-color: salmon;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
 
-.project-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
 
-.project {
-    background-color: #1a1a1a;
-    color: #fff;
-    border-radius: 10px;
-    padding: 40px;
-    width: 100%;
-    display: none;
-}
-
-.project.active {
-    display: block;
-    animation: fadeIn 0.5s ease forwards;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.technologies {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.nav-btn {
-    padding: 15px 30px;
-    background: salmon;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+.skill h3 
+{   
     font-size: 18px;
-    cursor: pointer;
-    margin: 0 10px;
+    margin-top: 10px;
+    color: #031540;
 }
 
-.nav-btn:hover {
-    background: #ff6f6f;
-    transform: scale(1.1);
-}
-
-/* Contact */
 .contact {
     padding: 50px 10%;
     background: #031540;
@@ -324,9 +288,248 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-bottom: 30px;
 }
 
-/* Footer */
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item a {
+    font-size: 30px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: salmon;
+}
+
+.contact-item span {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 80px 5%; 
+    background-color: #031540;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.projects h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #fff; 
+    margin-top: 0; 
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    margin-bottom: 0; 
+    animation: scaleIn 0.5s ease-out; 
+    height: 100% ;
+    margin: 0 auto;
+}
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.project {
+    background-color: #1a1a1a; 
+    color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px; 
+    min-height: 400px; 
+    overflow: hidden; 
+    display: none;
+    position: relative;
+    padding-bottom: 20px; 
+}
+
+.projects .status {
+    font-style: italic;
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0;
+    border-radius: 4px;
+}
+
+p.status[data-status='Finished'] {
+    color: green; 
+}
+
+p.status[data-status='Planning'] {
+    color: #4682B4;
+}
+
+p.status[data-status='In Progress'] {
+    color: rgba(179, 102, 242, 1);
+}
+
+p.status[data-status='Paused'] {
+    color: yellow;
+}
+
+p.status[data-status='In Development'] {
+    color: violet;
+}
+
+.project.active {
+    display: block; 
+    animation: fadeIn 0.5s ease forwards; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.project h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.projects h2::after {
+    content: '';
+    display: block;
+    width: 50px; 
+    height: 4px; 
+    background-color: salmon;
+    position: absolute;
+    bottom: -10px; 
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00abf0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #0096c7;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.project p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.technologies {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 20px 0; 
+    font-size: 24px; 
+}
+
+.technologies h4 {
+    font-size: 20px;
+    color: #fff; 
+    margin-right: 20px; 
+}
+
+.tech-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+}
+
+.icon {
+    width: 40px; 
+    height: auto; 
+    margin-right: 15px; 
+}
+
+.icon-csharp {
+    width: 32px; 
+    height: auto; 
+    vertical-align: middle;
+}
+
+
+.icon-rust {
+    width: 30px; 
+    height: auto; 
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+
+.icon-json {
+    width: 40px; 
+    height: auto;
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+
+.nav-btn {
+    padding: 15px 30px;
+    background: salmon;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin: 0 10px;
+}
+
+.nav-btn:hover {
+    background: #ff6f6f;
+    transform: scale(1.1);
+}
+
+
+
+
+
 .footer {
     background-color: #bf0fbc;
     color: #fff;
@@ -336,6 +539,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
+    animation: animateFooter 2s ease-in-out infinite; /* Animation for the footer */
 }
 
 .footer p {
@@ -343,64 +547,14 @@ body {
     padding: 10px 0;
     font-size: 14px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-/* 🔄 Responsive Design */
-@media (max-width: 768px) {
-    .home {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-        height: auto;
+@keyframes animateFooter {
+    0% {
+        transform: translateY(0);
     }
-
-    .home-image {
-        width: 250px;
-        height: 250px;
-        margin-bottom: 20px;
-    }
-
-    .home-content {
-        text-align: center;
-    }
-
-    .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .navbar a {
-        margin: 10px;
-    }
-
-    .skills-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project {
-        padding: 20px;
-    }
-
-    .project h3 {
-        font-size: 22px;
-    }
-
-    .projects h2,
-    .contact h2,
-    .my-skill-set h2 {
-        font-size: 28px;
-    }
-
-    .home-content h1 {
-        font-size: 32px;
-    }
-
-    .home-content h3 {
-        font-size: 24px;
-    }
-
-    .footer {
-        position: static;
+    100% {
+        transform: translateY(-5px);
     }
 }
