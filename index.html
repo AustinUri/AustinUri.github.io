@@ -1,181 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Uri Austin - Portfolio</title>
+    <title>Uri Austin - Full Stack Developer Portfolio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="You can find all about me, my projects and where to find me here!">
-    <meta name="keywords" content="website, programmer, magshimist, developer, portfolio, uri, uri austin, austinuri">
+    <meta name="description" content="Uri Austin - Full Stack Developer and Magshimist. Explore my projects, skills, and get in touch for collaborations.">
+    <meta name="keywords" content="website, programmer, magshimist, developer, portfolio, uri, uri austin, austinuri, full stack, rust, c++">
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header with improved navigation -->
     <header class="header">
         <div class="logo">A. Uri</div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class='bx bx-menu'></i>
+        </button>
         <nav class="navbar">
             <a href="#home" class="nav-link active">Home</a>
-            <a href="#skills" class="nav-link">My Skill Set</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
     </header>
+
+    <!-- Hero Section -->
     <section id="home" class="home">
-        <div class="home-image">
-            <img src="img.jpg" alt="Profile Picture">
-        </div>
-        <div class="home-content">
-            <h1>Hi, I am Uri Austin</h1>
-            <h3>Magshimist and Developer</h3>
-            <p>I am Uri Austin and I am a 18-year-old developer.<br> I like to game, develop games, and play football.<br> Feel free to contact me via Discord or email :3</p>
-            <div class="home-sci">
-                <a href="https://www.instagram.com/austinuri2006/"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://discord.gg/CTFaN9JX6j"><i class='bx bxl-discord-alt'></i></a>
-                <a href="https://open.spotify.com/user/4shyhphkb0n7ksckuayccnz0b?si=f5657c715db94314"><i class='bx bxl-spotify'></i></a>
+        <div class="home-container">
+            <div class="home-image">
+                <img src="img.jpg" alt="Uri Austin Profile Picture">
+                <div class="image-overlay"></div>
             </div>
-        </div>
-    </section>
-    <section id="skills" class="my-skill-set">
-        <h2>My Skill Set</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <i class='bx bxl-c-plus-plus'></i>
-                <h3>C/C++</h3>
-            </div>
-            <div class="skill">
-                <img src="Csharp-icon.png" alt="Rust Icon" style="width: 80px; height: 50px;">
-                <h3>C# Forms/Client GUI</h3>
-            </div>
-            <div class="skill">
-                <i class='bx bxl-java'></i>
-                <h3>Java</h3>
-            </div>
-            <div class="skill">
-                <img src="sql-server.png" alt="Rust Icon" style="width: 50px; height: 50px;">
-                <h3>SQL/SQLite</h3>
-            </div>
-            <div class="skill">
-                <span style="font-size: 40px;">🐧</span>
-               <h3>Linux(Ubuntu,Kali)</h3>
-            </div>
-            <div class="skill">
-                <img src="rust.png" alt="Rust Icon" style="width: 50px; height: 50px;">
-                <h3>Rust</h3>
-            </div>
-            <div class="skill">
-                <i class='bx bxl-github'></i>
-                <h3>GIT</h3>
-            </div>
-            <div class="skill">
-                <i class='bx bxl-python'></i>
-                <h3>Python</h3>
-            </div>
-            <div class="skill">
-                <i class='bx bxl-html5'></i>
-                <h3>HTML</h3>
-            </div>
-            <div class="skill">
-                <img src="asm.png" alt="Rust Icon" style="width: 50px; height: 50px;">
-                <h3>Assembly</h3>
-            </div>
-        </div>
-        <div>
-            <h6 class="work-values"> At the heart of my work, I prioritize collaboration and innovation. I believe in working closely with clients and team members to understand their vision and goals, fostering an environment where diverse ideas and perspectives flourish. By embracing innovation, I strive to create solutions that not only meet but exceed expectations, pushing the boundaries of creativity and technology. This approach ensures that each project is not just functional, but also visionary, leaving a lasting impact on users.</h6>
-            <p class="Quote">“In the end, it's not the years in your life that count. It's the life in your years.” – Abraham Lincoln.</p>
-        </div>
-    </section>
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project active">
-                <h3>Linux file system</h3>
-                <p>It's a linux file system in which you can create files,delete them and more!</p>
-                <p class="status" data-status='Finished'>Development Status: Finished</p>
-                <a href="https://github.com/AustinUri/LinuxFileSystem" class="btn">View Project</a>
-                <div class="technologies">
-                    <h4>Made with:</h4>
-                    <i class='bx bxl-c-plus-plus'></i>
+            <div class="home-content">
+                <h1>Hi, I'm <span class="highlight">Uri Austin</span></h1>
+                <h3 class="typing-text">Magshimist & Developer</h3>
+                <p>18-year-old developer passionate about creating innovative solutions. I specialize in systems programming, game development, and building robust applications.</p>
+                <div class="home-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="home-sci">
+                    <a href="https://www.instagram.com/austin_.uri/" aria-label="Instagram" target="_blank" rel="noopener">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+                    <a href="https://discord.gg/CTFaN9JX6j" aria-label="Discord" target="_blank" rel="noopener">
+                        <i class='bx bxl-discord-alt'></i>
+                    </a>
+                    <a href="https://open.spotify.com/user/4shyhphkb0n7ksckuayccnz0b?si=f5657c715db94314" aria-label="Spotify" target="_blank" rel="noopener">
+                        <i class='bx bxl-spotify'></i>
+                    </a>
+                    <a href="https://github.com/AustinUri" aria-label="GitHub" target="_blank" rel="noopener">
+                        <i class='bx bxl-github'></i>
+                    </a>
                 </div>
             </div>
-            <div class="project">
-                <h3>MagshiTrivia</h3>
-                <p>As I am a magshimist, the final project of the second year is to create a Trivia application.</p>
-                <p class="status" data-status="Paused">Development Status: Paused</p>
-                <a href="https://github.com/AustinUri/magshimimTrivia" class="btn">View Project</a>
-                <div class="technologies">
-                    <h4>Made with:</h4>
-                    <span class="icon"><i class='bx bxl-c-plus-plus'></i></span>
-                    <span class="icon"><i class='bx bxl-python'></i></span>
-                    <span class="icon"><img src="Csharp-icon.png" alt="C# Icon" class="icon-csharp"></span>
-                    <span class="icon"><img src="json.png" alt="json" class="icon-json"></span>
-                    </div>
-            </div>
-            <div class="project">
-                <h3>Hokm</h3>
-                <p>A card game that I learned from my late grandmother,I intend in making it using rust and json packets.</p>
-                <p class="status" data-status="Planning">Development Status: Planing</p>
-                <a href="https://github.com/AustinUri/Hokm/tree/main" class="btn">View Project</a>
-                <div class="technologies">
-                    <h4>Made with:</h4>
-                    <span class="icon"><img src="rust.png" alt="Rust Icon" class="icon-rust"></span>
-                    <span class="icon"><img src="json.png" alt="json" class="icon-json"></span>
-                </div>
-            </div>
-            <div class="project">
-                <h3>Portfolio</h3>
-                <p>It's the website your are Currently watching,I created this website so people can see my work.</p>
-                <p class="status" data-status="Finished">Development Status: Finished/Maintained</p>
-                <a href="https://github.com/AustinUri/AustinUri.github.io" class="btn">View Project</a>
-                <div class="technologies">
-                    <h4>Made with:</h4>
-                    <i class='bx bxl-javascript'></i>      
-                    <i class='bx bxl-html5'></i>
-                    <i class='bx bxl-css3' ></i>
-                    </div>
-            </div>
-            <div class="project">
-                <h3>Cli utils</h3>
-                <p>a commnd line compatible to linux and windows</p>
-                <p class="status" data-status="Finished">Development Status: Finished</p>
-                <a href="https://github.com/AustinUri/CLI_UTIL/tree/main" class="btn">View Project</a>
-                <div class="technologies">
-                    <h4>Made with:</h4>
-                    <span class="icon"><img src="rust.png" alt="Rust Icon" class="icon-rust"></span>
-                    </div>
-            </div>
-            <!-- Add more projects as needed -->
         </div>
-        <div class="project-navigation">
-            <button id="prevProject" class="nav-btn">Previous</button>
-            <button id="nextProject" class="nav-btn">Next</button>
-        </div>
-    </section>
-    
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me via the following:</p>
-        <div class="contact-info">
-            <div class="contact-item">
-                <a href="mailto:austinuri2006@gmail.com"><i class='bx bxl-gmail'></i></a>
-                <span>Mail me</span>
-            </div>
-            <div class="contact-item">
-                <a href="https://discord.gg/CTFaN9JX6j"><i class='bx bxl-discord'></i></a>
-                <span>Discord: Join my server</span>
-            </div>
-            <div class="contact-item">
-                <a href="https://www.instagram.com/austinuri2006/"><i class='bx bxl-instagram'></i></a>
-                <span>Follow me on Instagram</span>
-            </div>
-        </div>
-        <p>Feel free to reach out for collaborations or just a friendly chat. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
     </section>
 
+    <!-- About Section (New) -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a dedicated developer with a passion for creating efficient, scalable solutions. As a Magshimist, I've honed my skills across multiple programming languages and technologies.</p>
+                    <p>My journey in programming started with a curiosity about how things work under the hood, which led me to explore systems programming, game development, and full-stack applications.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Technologies</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-values">
+                    <h3>Core Values</h3>
+                    <div class="value-item">
+                        <i class='bx bx-bulb'></i>
+                        <div>
+                            <h4>Innovation</h4>
+                            <p>Constantly exploring new technologies and pushing creative boundaries</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <i class='bx bx-group'></i>
+                        <div>
+                            <h4>Collaboration</h4>
+                            <p>Working closely with clients and teams to bring visions to life</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <i class='bx bx-code-alt'></i>
+                        <div>
+                            <h4>Quality</h4>
+                            <p>Writing clean, efficient, and maintainable code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="my-skill-set">
+        <div class="section-container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">A comprehensive toolkit for building robust applications</p>
+            
+            <div class="skills-category">
+                <h3 class="category-title">Programming Languages</h3>
+                <div class="skills-container">
+                    <div class="skill" data-skill="advanced">
+                        <i class='bx bxl-c-plus-plus'></i>
+                        <h4>C/C++</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 85%"></div>
+                        </div>
+                        <p class="skill-desc">Systems programming & performance optimization</p>
+                    </div>
+                    <div class="skill" data-skill="advanced">
+                        <img src="Csharp-icon.png" alt="C# Icon">
+                        <h4>C#</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                        <p class="skill-desc">Desktop applications & GUI development</p>
+                    </div>
+                    <div class="skill" data-skill="intermediate">
+                        <img src="rust.png" alt="Rust Icon">
+                        <h4>Rust</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 75%"></div>
+                        </div>
+                        <p class="skill-desc">Safe systems programming & CLI tools</p>
+                    </div>
+                    <div class="skill" data-skill="intermediate">
+                        <i class='bx bxl-python'></i>
+                        <h4>Python</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                        <p class="skill-desc">Scripting, automation & backend development</p>
+                    </div>
+                    <div class="skill" data-skill="intermediate">
+                        <i class='bx bxl-java'></i>
+                        <h4>Java</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 70%"></div>
+                        </div>
+                        <p class="skill-desc">Object-oriented programming & applications</p>
+                    </div>
+                    <div class="skill" data-skill="beginner">
+                        <img src="asm.png" alt="Assembly Icon">
+                        <h4>Assembly</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 60%"></div>
+                        </div>
+                        <p class="skill-desc">Low-level programming & optimization</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="category-title">Web Development</h3>
+                <div class="skills-container">
+                    <div class="skill" data-skill="intermediate">
+                        <i class='bx bxl-html5'></i>
+                        <h4>HTML5</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 85%"></div>
+                        </div>
+                        <p class="skill-desc">Semantic markup & accessibility</p>
+                    </div>
+                    <div class="skill" data-skill="intermediate">
+                        <i class='bx bxl-css3'></i>
+                        <h4>CSS3</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                        <p class="skill-desc">Responsive design & animations</p>
+                    </div>
+                    <div class="skill" data-skill="intermediate">
+                        <i class='bx bxl-javascript'></i>
+                        <h4>JavaScript</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 75%"></div>
+                        </div>
+                        <p class="skill-desc">Interactive web applications</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="category-title">Tools & Technologies</h3>
+                <div class="skills-container">
+                    <div class="skill" data-skill="advanced">
+                        <i class='bx bxl-git'></i>
+                        <h4>Git & GitHub</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 85%"></div>
+                        </div>
+                        <p class="skill-desc">Version control & collaboration</p>
+                    </div>
+                    <div class="skill" data-skill="intermediate">
+                        <img src="sql-server.png" alt="SQL Icon">
+                        <h4>SQL/SQLite</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 75%"></div>
+                        </div>
+                        <p class="skill-desc">Database design & management</p>
+                    </div>
+                    <div class="skill" data-skill="advanced">
+                        <span class="emoji-icon">🐧</span>
+                        <h4>Linux</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                        <p class="skill-desc">Ubuntu, Kali & system administration</p>
+                    </div>
+                    <div class="skill" data-skill="intermediate">
+                        <img src="json.png" alt="JSON Icon">
+                        <h4>JSON/APIs</h4>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                        <p class="skill-desc">Data formats & API integration</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="philosophy-quote">
+                <i class='bx bxs-quote-alt-left quote-icon'></i>
+                <p class="quote-text">"In the end, it's not the years in your life that count. It's the life in your years."</p>
+                <p class="quote-author">— Abraham Lincoln</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A showcase of my recent work and ongoing developments</p>
+            
+
+                <div class="project">
+                    <div class="project-header">
+                        <h3>MagshiTrivia</h3>
+                        <span class="status-badge paused">Paused</span>
+                    </div>
+                    <p class="project-description">Comprehensive trivia application developed as part of Magshimim second-year project. Features multi-language implementation and JSON-based question storage.</p>
+                    <div class="technologies">
+                        <span class="tech-tag"><i class='bx bxl-c-plus-plus'></i> C++</span>
+                        <span class="tech-tag"><i class='bx bxl-python'></i> Python</span>
+                        <span class="tech-tag"><img src="Csharp-icon.png" alt="C#"> C#</span>
+                        <span class="tech-tag"><img src="json.png" alt="JSON"> JSON</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/AustinUri/magshimimTrivia" class="btn btn-project" target="_blank" rel="noopener">
+                            <i class='bx bx-code-alt'></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <h3>Hokm Card Game</h3>
+                        <span class="status-badge planning">Planning</span>
+                    </div>
+                    <p class="project-description">Digital recreation of a traditional Persian card game learned from my late grandmother. Using Rust for performance and JSON for network communication.</p>
+                    <div class="technologies">
+                        <span class="tech-tag"><img src="rust.png" alt="Rust"> Rust</span>
+                        <span class="tech-tag"><img src="json.png" alt="JSON"> JSON</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/AustinUri/Hokm/tree/main" class="btn btn-project" target="_blank" rel="noopener">
+                            <i class='bx bx-code-alt'></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <h3>CLI Utils</h3>
+                        <span class="status-badge finished">Finished</span>
+                    </div>
+                    <p class="project-description">Cross-platform command-line utilities compatible with both Linux and Windows. Built with Rust for performance and reliability.</p>
+                    <div class="technologies">
+                        <span class="tech-tag"><img src="rust.png" alt="Rust"> Rust</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/AustinUri/CLI_UTIL/tree/main" class="btn btn-project" target="_blank" rel="noopener">
+                            <i class='bx bx-code-alt'></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-header">
+                        <h3>Portfolio Website</h3>
+                        <span class="status-badge maintained">Maintained</span>
+                    </div>
+                    <p class="project-description">This responsive portfolio website showcasing my projects and skills. Built with vanilla HTML, CSS, and JavaScript with focus on performance and accessibility.</p>
+                    <div class="technologies">
+                        <span class="tech-tag"><i class='bx bxl-html5'></i> HTML5</span>
+                        <span class="tech-tag"><i class='bx bxl-css3'></i> CSS3</span>
+                        <span class="tech-tag"><i class='bx bxl-javascript'></i> JavaScript</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/AustinUri/AustinUri.github.io" class="btn btn-project" target="_blank" rel="noopener">
+                            <i class='bx bx-code-alt'></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Feel free to reach out for collaborations, questions, or just a friendly chat</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class='bx bxl-gmail'></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Drop me a message</p>
+                    <a href="mailto:austinuri2006@gmail.com" class="contact-link">austinuri2006@gmail.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class='bx bxl-discord'></i>
+                    </div>
+                    <h3>Discord</h3>
+                    <p>Join my server</p>
+                    <a href="https://discord.gg/CTFaN9JX6j" class="contact-link" target="_blank" rel="noopener">Community Server</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class='bx bxl-instagram'></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Follow my journey</p>
+                    <a href="https://www.instagram.com/austin_.uri/" class="contact-link" target="_blank" rel="noopener">@austinuri2006</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class='bx bxl-github'></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Check out my code</p>
+                    <a href="https://github.com/AustinUri" class="contact-link" target="_blank" rel="noopener">@AustinUri</a>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, I'll do my best to get back to you!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>© UriAustin, 2024</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Uri Austin. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Back to Top</a>
+            </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
